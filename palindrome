@@ -1,0 +1,20 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       String st=Integer.toString(n);
+       char[] c=st.toCharArray();
+       int i=0;
+       int j=c.length-1;
+       while(i<j){
+           if(c[i]!=c[j]){
+               System.out.print("no");
+               return;
+           }
+           i++;
+           j--;
+       }
+       System.out.print("yes");
+    }
+}
